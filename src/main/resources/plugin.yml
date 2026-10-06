@@ -1,0 +1,16 @@
+name: DropMenu
+version: 1.0.0
+main: de.dropmenu.DropPlugin
+api-version: "26.1"
+description: Drop-Menü mit Item-Auswahl und beliebiger Menge
+
+commands:
+  drop:
+    description: Öffnet das Drop-Menü
+    usage: /drop [stop]
+    permission: dropmenu.use
+
+permissions:
+  dropmenu.use:
+    description: Erlaubt die Nutzung von /drop
+    default: op
