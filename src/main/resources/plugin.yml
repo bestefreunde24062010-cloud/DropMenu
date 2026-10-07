@@ -1,0 +1,23 @@
+name: DropSpawn
+version: 1.0.0
+main: de.dropspawn.DropSpawnPlugin
+api-version: "26.1"
+description: Drop-Menü für Items und Spawning-Menü für Mobs in einem Plugin
+
+commands:
+  drop:
+    description: Öffnet das Drop-Menü (Items droppen)
+    usage: /drop
+    permission: dropmenu.use
+  spawning:
+    description: Öffnet das Spawning-Menü (Mobs spawnen)
+    usage: /spawning
+    permission: spawningmenu.use
+
+permissions:
+  dropmenu.use:
+    description: Erlaubt die Nutzung von /drop
+    default: op
+  spawningmenu.use:
+    description: Erlaubt die Nutzung von /spawning
+    default: op
